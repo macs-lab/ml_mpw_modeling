@@ -1,6 +1,6 @@
 ## Introduction
 
-There is 6 different files in this folder: ConvertData.m, ConvertData20.m, computeCost.m, gradientDescent.m, one_on_one.m, one_on_one_20.m.
+There are 6 different files in this folder: ConvertData.m, ConvertData20.m, computeCost.m, gradientDescent.m, one_on_one.m, one_on_one_20.m.
 
 The actual machine learning codes that trains the data are one_on_one.m and one_on_one20.m, however, in order to understand this code, comprehension of other codes are necessary.
 I plan to explain to the best of my ability the method and logic that were used to solve this problem of fitting the curve to predict future melt pool width.
