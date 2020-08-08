@@ -15,6 +15,6 @@ I plan to explain to the best of my ability the method and logic that were used 
 This file takes in the given data (10tracks_mpw.mat and 20tracks_mpw.mat) and gives out two values t and mpwall in a file named Data.mat and Data2.mat.
 The first is used for training the 10 tracks example and the latter for the 20 tracks. t is time in seconds and mpwall is melt pool width in meters.
 
-3. computeCost.m:
+3. [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m):
 
 This code calculates the cost function from our data. Cost function 
