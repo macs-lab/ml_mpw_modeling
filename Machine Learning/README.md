@@ -9,7 +9,8 @@ I plan to explain to the best of my ability the method and logic that were used 
 1. [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m)
 2. [gradientDescent.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/gradientDescent.m)
 3. [convertData.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData.m) and [convertData20.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData20.m)
-4. [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m)
+4. [one_on_one.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/one_on_one.m)
+5. [one_on_one_20.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/one_on_one_20.m)
 
 
 ## computeCost.m
