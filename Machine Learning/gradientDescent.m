@@ -3,6 +3,7 @@ function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 %   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by 
 %   taking num_iters gradient steps with learning rate alpha
 
+m = length(y); 
 J_history = zeros(num_iters, 1);
 
 
