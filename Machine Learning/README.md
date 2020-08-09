@@ -15,7 +15,7 @@ I plan to explain to the best of my ability the method and logic that were used 
 
 ## computeCost.m
 This code calculates the cost function J of the data. Cost function is the average of the sum of least squared difference of the predicted melt pool width and the actual melt pool width. Since we are training the melt pool width linearly, we multiply a parameter vector that is 2 by 1 (varaible name of the parameter is called theta) by an X matrix which the size is n by 2 (n is the number of training patterns) to calculate the 'hypothesis function.'
-Hypothesis function, thus, has the form h(x) = theta0 + theta1 * x and the cost function 1/(2*m) * sum(h(x) - y).^2
+Hypothesis function, thus, has the form h(x) = theta0 + theta1 * x and the cost function J = 1/(2*m) * sum(h(x) - y).^2
 The computed cost function is 3-dimensional with axes theta0, theta1, and J.
 
 ## gradientDescent.m
@@ -25,3 +25,10 @@ Gradient descent is used to optimize the multidimensional cost function. By usin
 This file takes in the given data (10tracks_mpw.mat and 20tracks_mpw.mat) and gives out two values t and mpwall in a file named Data.mat and Data2.mat.
 The first is used for training the 10 tracks example and the latter for the 20 tracks. t is time in seconds and mpwall is melt pool width in meters.
 
+## one_on_one.m
+This is the code that combines all the previous files into one and does machine learning.
+In this example, I used 7 patterns to train for linear regression and tested the last 2 patterns to see whether the model could accuarately predict future melt pool width or not. To quickly summarize my method, each pattern is consisted of 100 points and every 100th point represents the same point in the past/future pattern. For example, if the first point t = 1 is the peak of the pattern, t = 101 is also the peak of the next pattern. In this code, I ignored the first 95 points since they are almost a horizontal line, and started training from the 96th point(t when m=96). Since I am training 7 patterns, I need to find a best-fit linear line that connects the y values of t(96), t(196), ... , t(696). Then I move on to find a best-fit line of the next point of the pattern (t(97), t(107), etc.). I will end up with 100 different linear lines and if I plug in the time interval in the testing data, I can evaluate verify if my model is accurate.
+
+
+## one_on_one_20.m
+In this example, I used 15 patterns as the training set and 4 as the testing set. The code is slightly different from one_on_one.m because after 10 patterns, the drop in every 101th point disappears. Therefore, I had to solve for two different parameters for the 101th point.
