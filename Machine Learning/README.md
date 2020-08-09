@@ -6,10 +6,10 @@ There are 6 different files in this folder: ConvertData.m, ConvertData20.m, comp
 I plan to explain to the best of my ability the method and logic that were used to find the best fitting curves that predicts future melt pool width.
 
 ## Contents
-- [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m)
-- [gradientDescent.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/gradientDescent.m)
-- [convertData.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData.m) and [convertData20.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData20.m)
-- [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m)
+1. [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m)
+2. [gradientDescent.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/gradientDescent.m)
+3. [convertData.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData.m) and [convertData20.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData20.m)
+4. [computeCost.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/computeCost.m)
 
 
 ## computeCost.m
