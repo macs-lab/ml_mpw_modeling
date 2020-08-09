@@ -13,11 +13,12 @@ I plan to explain to the best of my ability the method and logic that were used 
 
 
 ## computeCost.m
-
-
+This code calculates the cost function J of the data. Cost function is the average of the sum of least squared difference of the predicted melt pool width and the actual melt pool width. Since we are training the melt pool width linearly, we multiply a parameter vector that is 2 by 1 (varaible name of the parameter is called theta) by an X matrix which the size is n by 2 (n is the number of training patterns) to calculate the 'hypothesis function.'
+Hypothesis function, thus, has the form h(x) = theta0 + theta1 * x and the cost function 1/(2*m) * sum(h(x) - y).^2
+The computed cost function is 3-dimensional with axes theta0, theta1, and J.
 
 ## gradientDescent.m
-
+Gradient descent is used to optimize the multidimensional cost function. By using this function, it outputs a parameter vector which minimizes the squared difference of the predictied mpw and the actual mpw. Alpha is also known as the learning rate, and finding the right value of alpha is key for the efficiency of linear regression. Choosing an alpha that is too big could hinder the convergence of the parameter vector.
 
 ## convertData.m and convertData20.m
 This file takes in the given data (10tracks_mpw.mat and 20tracks_mpw.mat) and gives out two values t and mpwall in a file named Data.mat and Data2.mat.
