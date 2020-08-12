@@ -36,5 +36,4 @@ In this example, I used 15 patterns as the training set and 4 as the testing set
 
 ## Results
 1. 10 Tracks Result:
-
 ![](Images/10track_training.png)
