@@ -36,4 +36,20 @@ In this example, I used 15 patterns as the training set and 4 as the testing set
 
 ## Results
 1. 10 Tracks Result:
-![](Images/10track_training.png)
+
+The exact R-Squared values: 
+
+0.990	0.990	0.991	0.992	0.995	0.996	0.994	0.987	0.980
+![](images/10track_training.png)
+![](images/Rsquared.png)
+
+2. 20 Tracks Results:
+
+The exact R-Squared values:
+
+0.989	0.987	0.989	0.993	0.990	0.987	0.989	0.953	0.991	0.992	0.974	0.991	0.961	0.982	0.964	0.980	0.970	0.971	0.897
+
+The 15th and 19th values are low compared to the others. This is caused by the outlier values (peak of 15th pattern is significantly higher than others and there is an irregular local maximum in the 19th pattern). 
+
+![](images/20track_training.png)
+![](images/Rsquared20.png)
