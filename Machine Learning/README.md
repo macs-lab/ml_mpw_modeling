@@ -11,6 +11,7 @@ I plan to explain to the best of my ability the method and logic that were used 
 3. [convertData.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData.m) & [convertData20.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/ConvertData20.m)
 4. [one_on_one.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/one_on_one.m)
 5. [one_on_one_20.m](https://github.com/macs-lab/ml_mpw_modeling/blob/master/Machine%20Learning/one_on_one_20.m)
+6. Results
 
 
 ## computeCost.m
@@ -32,3 +33,8 @@ In this example, I used 7 patterns to train for linear regression and tested the
 
 ## one_on_one_20.m
 In this example, I used 15 patterns as the training set and 4 as the testing set. The code is slightly different from one_on_one.m because after 10 patterns, the drop in every 101th point disappears. Therefore, I had to solve for two different parameters for the 101th point.
+
+## Results
+1. 10 Tracks Result:
+
+![](Images/10track_training.png)
