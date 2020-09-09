@@ -6,8 +6,8 @@ The linear regression model I previously created is easy to understand and utili
 ## Files
 1. [LSTM_10_Tracks.ipynb](https://github.com/macs-lab/ml_mpw_modeling/blob/master/LSTM/LSTM_10_Tracks.ipynb)
 2. [LSTM_20_Tracks.ipynb](https://github.com/macs-lab/ml_mpw_modeling/blob/master/LSTM/LSTM_20_Tracks.ipynb)
-3. 
-4. 
+3. [LSTM_10.csv](https://github.com/macs-lab/ml_mpw_modeling/blob/master/LSTM/LSTM_10.csv)
+4. [LSTM_20.csv](https://github.com/macs-lab/ml_mpw_modeling/blob/master/LSTM/LSTM_20.csv)
 
 ## What to look out for
 If you look at the code, it will be apparent that I am using Google Colaboratory. The first block of code is used to bring data in from my Google Drive. Therefore, it can be ignored and you can start from the second block of code. There are three important factos that determine the accuarcy, as well as, the time it takes to train the model: Learning rate, number of epoch, and training window. I have found that the best input for the learning rate is around 0.05 and the training window is around 150-200. Having a GPU will decrease the required training time to about 3-4 times, however, this model can be also trained entirely by a CPU.
