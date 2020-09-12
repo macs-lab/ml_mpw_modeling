@@ -42,5 +42,39 @@ Applying the create_inout_sequences function for our data will look like this:
 
 ![](images/Preprocessing4.JPG)
 
+## GPU
+
+Training with a GPU will decrease the required training time to about 3-4 times, however, this model can also be trained entirely by a CPU. Running this code will put all your training data into the GPU if you have one, and leave it in the CPU otherwise.
+
+![](images/GPU.JPG)
+
+## Creating and Training  Model
+
+I have set the hidden layer size to be 100. Below is just a general way to create an LSTM Network(quite similar to regular DNN)
+![](images/Create%20Model.JPG)
+
+The next lines of code puts the model into the GPU(if you have one) and sets the loss function and optimizer. I've used the Adam optimization algorithm with a learning rate of 0.06. 
+
+![](images/Create%20Model2.JPG)
+
+The following code will not train the model with the data you created with the create_inout_sequences function. It will print out the loss value every 5 epochs.
+
+![](images/Training%20Data.JPG)
+
+## Evaluating Model
+
+After training our model, we want to evaluate how the model will look like. This first step is crucial because the following step where we process the data with a numpy array cannot be done in the GPU. We are basically moving our model and data location from the GPU back to the CPU.
+
+![](images/Evaluating.JPG)
+
+Once the evaluation is done, we use scalar.inverse_transform function to reset our normalized data back to the original values.
+![](images/Evaluating2.JPG)
+
+We check that the model is successfully trained:
+
+![](images/Graph2.JPG)
+
+
+
 ## What to look out for
-There are three important factors that determine the accuarcy, as well as, the time it takes to train the model: Learning rate, number of epoch, and training window. I have found that the best input for the learning rate is around 0.05 and the training window is around 150-200. Having a GPU will decrease the required training time to about 3-4 times, however, this model can also be trained entirely by a CPU.
+There are three important factors that determine the accuarcy, as well as, the time it takes to train the model: Learning rate, number of epoch, and training window. I have found that the best input for the learning rate is around 0.05 and the training window is around 150-200.
