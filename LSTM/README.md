@@ -16,11 +16,16 @@ The linear regression model I previously created is easy to understand and utili
 4. Creating and Training Model
 5. Evaluating Model
 
-
 ## Importing Data
+![](Importing%20Data.JPG)
 
+I used Google Colaboratory to make and train this mode, therefore, I had to import the data from my Google Drive. Skip this step and simply import your data if you are not using Google Colab(I want to point out that downloaded.GetContentFile('DNN_20.csv') needs to be downloaded.GetContentFile('LSTM_20.csv')). The id for downloaded = drive.CreateFile({}) is going to be different for each person, however, there are many blogs on the Internet that explains how to find the id for your file in Google Drive.
 
-
+## Preprocessing Data
+![](images/Preprocessing1.JPG)
+![](images/Preprocessing2.JPG)
+![](images/Preprocessing3.JPG)
+![](images/Preprocessing4.JPG)
 
 ## What to look out for
-If you look at the code, it will be apparent that I am using Google Colaboratory. The first block of code is used to bring data in from my Google Drive. Therefore, it can be ignored and you can start from the second block of code. There are three important factors that determine the accuarcy, as well as, the time it takes to train the model: Learning rate, number of epoch, and training window. I have found that the best input for the learning rate is around 0.05 and the training window is around 150-200. Having a GPU will decrease the required training time to about 3-4 times, however, this model can also be trained entirely by a CPU.
+There are three important factors that determine the accuarcy, as well as, the time it takes to train the model: Learning rate, number of epoch, and training window. I have found that the best input for the learning rate is around 0.05 and the training window is around 150-200. Having a GPU will decrease the required training time to about 3-4 times, however, this model can also be trained entirely by a CPU.
