@@ -20,10 +20,26 @@ The linear regression model I previously created is easy to understand and utili
 I used Google Colaboratory to make and train this model, therefore, I had to import the data from my Google Drive. Skip this step and simply import your data if you are not using Google Colab(I want to point out that downloaded.GetContentFile('DNN_20.csv') needs to be downloaded.GetContentFile('LSTM_20.csv'). Also the id for downloaded = drive.CreateFile({}) is going to be different for each person, however, there are many blogs on the Internet that explains how to find the id for your file in Google Drive).
 ![](images/Importing%20Data.JPG)
 
+
 ## Preprocessing Data
+We read in the csv file by using the pandas library and then modify the window of the variables so we can put more emphasis on the trend of the patterns. I set the training size to be around 75% of the data testing size to be 25%.
 ![](images/Preprocessing1.JPG)
+
+If we graph the data, it would look as such:
+
+![](images/Graph1.JPG)
+
+The next step is to normalize the data and change the type from numpy array to tensor. Normalizing is critical because without it, the trained model can predict the shape of the pattern, however, the predicted values are out of scale and incorrect.
+
 ![](images/Preprocessing2.JPG)
+
+This function is the key for training our LSTM model. We input our data and set a training window, and in return it outputs a list of multiple tuples. To illustrate what the function does, given a vector [a, b, c, d, e] and the training window is 2, we would get [([a, b], [c]), ([b, c], [d]), ([c, d], [e])].
+
+
 ![](images/Preprocessing3.JPG)
+
+Applying the create_inout_sequences function for our data will look like this:
+
 ![](images/Preprocessing4.JPG)
 
 ## What to look out for
