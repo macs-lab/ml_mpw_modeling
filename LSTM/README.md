@@ -17,9 +17,8 @@ The linear regression model I previously created is easy to understand and utili
 5. Evaluating Model
 
 ## Importing Data
-![](Importing%20Data.JPG)
-
 I used Google Colaboratory to make and train this mode, therefore, I had to import the data from my Google Drive. Skip this step and simply import your data if you are not using Google Colab(I want to point out that downloaded.GetContentFile('DNN_20.csv') needs to be downloaded.GetContentFile('LSTM_20.csv')). The id for downloaded = drive.CreateFile({}) is going to be different for each person, however, there are many blogs on the Internet that explains how to find the id for your file in Google Drive.
+![](images/Importing%20Data.JPG)
 
 ## Preprocessing Data
 ![](images/Preprocessing1.JPG)
