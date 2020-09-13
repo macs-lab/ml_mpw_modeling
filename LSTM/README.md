@@ -15,6 +15,7 @@ The linear regression model I previously created is easy to understand and utili
 3. GPU
 4. Creating and Training Model
 5. Evaluating Model
+6. Result
 
 ## Importing Data
 I used Google Colaboratory to make and train this model, therefore, I had to import the data from my Google Drive. Skip this step and simply import your data if you are not using Google Colab(I want to point out that downloaded.GetContentFile('DNN_20.csv') needs to be downloaded.GetContentFile('LSTM_20.csv'). Also the id for downloaded = drive.CreateFile({}) is going to be different for each person, however, there are many blogs on the Internet that explains how to find the id for your file in Google Drive).
@@ -74,7 +75,18 @@ We check that the model is successfully trained:
 
 ![](images/Graph2.JPG)
 
+Now we want to predict the future melt pool width with our model. It is done in the same way as evaluating the model
 
+![](images/Evaluating3.JPG)
 
-## What to look out for
-There are three important factors that determine the accuarcy, as well as, the time it takes to train the model: Learning rate, number of epoch, and training window. I have found that the best input for the learning rate is around 0.05 and the training window is around 150-200.
+Prediction:
+
+![](images/Result_Graph.JPG)
+
+## Result
+
+The computed R-squared values are such:
+
+![](images/Rsq.JPG)
+
+The values are close to the original one, however, one can notice that the values are less than the linear regression model I created (0.9800, 0.9700, 0.9714, 0.8967).
